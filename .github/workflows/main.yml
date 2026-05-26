@@ -1,0 +1,20 @@
+name: Mi Pipeline DevOps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar código
+      uses: actions/checkout@v3
+
+    - name: Mostrar mensaje
+      run: echo "Pipeline funcionando correctamente"
+
+    - name: Revisar archivo HTML
+      run: cat index.html
