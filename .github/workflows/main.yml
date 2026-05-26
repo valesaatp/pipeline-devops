@@ -17,4 +17,4 @@ jobs:
       run: echo "Pipeline funcionando correctamente"
 
     - name: Revisar archivo HTML
-      run: cat index.html
+      run: cat archivo_error.html
